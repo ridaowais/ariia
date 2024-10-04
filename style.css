@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family:Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.navbar{
+    height : 80px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+ .carousel-item{
+    height: 50vh;
+    min-height: 120px;
+    max-width: 100%;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    background: #8ABFE5;
+    opacity: 0.5;
+}
+.carousel-caption{
+    align-items: center;
+    bottom:180px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+}
+.carousel-caption{
+    font-size: 40px;
+}
+@media(min-width: 768px){
+    .news-input{
+        width:50%;
+    }
+}
+.navbar-brand{
+    font-family: Arial, sans-serif;
+
+}
+.nav-item:hover{
+    background-color: #7A6672;
+}
+.navbar-nav .navitem .dropdown-menu{
+    display: none;
+    position:absolute;
+    right:0;
+    background-color: #F9F9F9; 
+    min-width:200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.navbar-nav .nav-item:hover .dropdown-menu{
+    display:block;
+}
+.dropdown-menu a{
+    color: #3B617D;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-menu a:hover{
+    background-color: #7A6672; 
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler .fas{
+    color:#7A6672;
+    font-size: 1.25rem;
+}
+.nav-link .fas{
+    margin-right: 2px; 
+} 
+body{
+    background-color: #3B617D;
+}
+.navbar{
+    background-color: #3B617D;
+}
+.navbar-toggler{
+    border: none;
+}
+.navbar-toggler .fas{
+    color: #FEE9AE;
+    font-size: 1.25rem;
+}
+.nav-link .fas{
+    margin-right: 2px;  
+}
+p{
+    color:#FEE9AE;
+}
+.navbar-brand img{
+    height: 90px;
+    width: 70px;
+    padding: 5px;
+    margin-right: 10px;
+}
+.custom-footer{
+    background-color: #3B617D;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.custom-button{
+    background-color: #8ABFE5 !important;
+    color: #FEE9AE;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bg-dark{
+    background-color: #3B617D !important; 
+}
+
